@@ -24,7 +24,7 @@ An automated benchmarking tool for CS:GO that measures system latency and perfor
 
 2. **Configure CS:GO Settings**
    - Copy `video.txt` to `C:\Program Files (x86)\Steam\Userdata\[YOUR_STEAM_ID]\730\local\cfg\`
-   - Copy the `csgo` folder from [csgo-benchmark](https://github.com/samisalreadytaken/csgo-benchmark) to `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive`
+   - Copy the `csgo` folder from the respository to `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive`
 
 3. **Bind Console Key**
    - Launch CS:GO
