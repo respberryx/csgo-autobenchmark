@@ -1,17 +1,17 @@
 # CSGO Autobenchmark
 
-An automated benchmarking tool for CS:GO that measures system latency and performance metrics.
+An automated benchmarking tool for Counter-Strike 2 (CS2) that measures system latency and performance metrics.
 
 ## Requirements
 
 ### System Requirements
 - Windows 10/11
-- CS:GO installed on SSD (not recommended on HDD due to loading times)
+- Counter-Strike 2 installed on SSD (not recommended on HDD due to loading times)
 - Administrator privileges
 - Python 3.8 or higher
 
-### CS:GO Setup
-1. Enable developer console in CS:GO game settings
+### CS2 Setup
+1. Enable developer console in CS2 game settings
 2. Bind console key to F5 (required)
 3. Stable internet connection for map loading
 
@@ -22,18 +22,18 @@ An automated benchmarking tool for CS:GO that measures system latency and perfor
    pip install -r requirements.txt
    ```
 
-2. **Configure CS:GO Settings**
+2. **Configure CS2 Settings**
    - Copy `video.txt` to `C:\Program Files (x86)\Steam\Userdata\[YOUR_STEAM_ID]\730\local\cfg\`
-   - Copy the `csgo` folder from the respository to `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive`
+   - Copy the `csgo` folder from this repository to `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive` (required for benchmark scripts)
 
 3. **Bind Console Key**
-   - Launch CS:GO
+   - Launch CS2
    - Open console and enter: `bind F5 "toggleconsole"`
 
 ## Usage
 
 1. **Preparation**
-   - Launch CS:GO and wait until you're in the main menu
+   - Launch CS2 and wait until you're in the main menu
    - Ensure the console is closed
    - Close any unnecessary background applications
 
@@ -42,7 +42,7 @@ An automated benchmarking tool for CS:GO that measures system latency and perfor
    python -m csgo_autobenchmark
    ```
    - Press Enter when ready to start benchmarking
-   - You have 5 seconds to tab back into CS:GO
+   - You have 5 seconds to tab back into CS2
    - Do not interact with your PC during the benchmark
 
 3. **Configuration (Optional)**
@@ -84,7 +84,7 @@ Options:
    - Run with administrator privileges
 
 3. **Long Load Times**
-   - Install CS:GO on an SSD
+   - Install CS2 on an SSD
    - Close background applications
    - Ensure stable internet connection
 
