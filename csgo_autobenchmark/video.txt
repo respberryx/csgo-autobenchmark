@@ -1,0 +1,36 @@
+"VideoConfig"
+{
+	// Performance Settings
+	"setting.cpu_level"		"0"		// 0 = Low (Recommended for benchmarking)
+	"setting.gpu_level"		"0"		// 0 = Low (Recommended for benchmarking)
+	"setting.gpu_mem_level"		"0"		// 0 = Low
+	"setting.mem_level"		"2"		// 2 = Medium
+
+	// Anti-Aliasing & Visual Quality
+	"setting.mat_antialias"		"0"		// 0 = Disabled
+	"setting.mat_aaquality"		"0"		// 0 = Disabled
+	"setting.mat_forceaniso"		"0"		// 0 = Disabled
+	"setting.mat_software_aa_strength"	"0"	// 0 = Disabled
+	
+	// Synchronization Settings
+	"setting.mat_vsync"		"0"		// 0 = Disabled (Required for accurate benchmarking)
+	"setting.mat_triplebuffered"	"0"		// 0 = Disabled
+	"setting.mat_queue_mode"		"-1"		// -1 = Default
+	
+	// Texture & Shader Settings
+	"setting.mat_grain_scale_override"	"-1.0"	// -1.0 = Default
+	"setting.mat_texturestreaming"		"1"	// 1 = Enabled
+	"setting.mat_enable_uber_shaders"	"1"	// 1 = Enabled
+	
+	// Effects & Post-Processing
+	"setting.mat_motion_blur_enabled"	"0"	// 0 = Disabled
+	"setting.csm_quality_level"		"0"	// 0 = Low
+	"setting.r_player_visibility_mode"	"0"	// 0 = Default
+	
+	// Resolution Settings
+	"setting.defaultres"		"1920"		// Width
+	"setting.defaultresheight"	"1080"		// Height
+	"setting.aspectratiomode"		"0"
+	"setting.fullscreen"		"1"		// 1 = Fullscreen
+	"setting.nowindowborder"		"0"		// 0 = Default window border
+}

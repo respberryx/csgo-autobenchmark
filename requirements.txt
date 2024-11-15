@@ -1,0 +1,5 @@
+# Required dependencies
+pynput==1.7.6            # Keyboard control
+pathlib>=1.0.1           # Path manipulation
+typing-extensions>=4.5.0  # Type hints support
+pywin32>=306; platform_system=="Windows"  # Windows-specific functionality
