@@ -2,7 +2,7 @@
 //------------------- Copyright (c) samisalreadytaken -------------------
 //                       github.com/samisalreadytaken
 //-----------------------------------------------------------------------
-local VERSION = "1.4.7";
+local VERSION = "2.0.0";
 
 IncludeScript("vs_library");
 
@@ -87,106 +87,22 @@ player <- VS.GetPlayerByIndex(1);
 
 //--------------------------------------------------------------
 
-MDL <-
+MODELS <-
 {
-	FBIa  = "models/player/custom_player/legacy/ctm_fbi_varianta.mdl",
-	FBIb  = "models/player/custom_player/legacy/ctm_fbi_variantb.mdl",
-	FBIc  = "models/player/custom_player/legacy/ctm_fbi_variantc.mdl",
-	FBId  = "models/player/custom_player/legacy/ctm_fbi_variantd.mdl",
-	FBIe  = "models/player/custom_player/legacy/ctm_fbi_variante.mdl",
-	FBIf  = "models/player/custom_player/legacy/ctm_fbi_variantf.mdl",
-	FBIg  = "models/player/custom_player/legacy/ctm_fbi_variantg.mdl",
-	FBIh  = "models/player/custom_player/legacy/ctm_fbi_varianth.mdl",
+	CT_FBI = "models/player/ct_fbi/ct_fbi.vmdl",
+	CT_GIGN = "models/player/ct_gign/ct_gign.vmdl",
+	CT_GSG9 = "models/player/ct_gsg9/ct_gsg9.vmdl",
+	CT_IDF = "models/player/ct_idf/ct_idf.vmdl",
+	CT_SAS = "models/player/ct_sas/ct_sas.vmdl",
+	CT_SWAT = "models/player/ct_swat/ct_swat.vmdl",
+	CT_ST6 = "models/player/ct_st6/ct_st6.vmdl",
 
-	GIGNa = "models/player/custom_player/legacy/ctm_gign_varianta.mdl",
-	GIGNb = "models/player/custom_player/legacy/ctm_gign_variantb.mdl",
-	GIGNc = "models/player/custom_player/legacy/ctm_gign_variantc.mdl",
-	GIGNd = "models/player/custom_player/legacy/ctm_gign_variantd.mdl",
-
-	GSG9a = "models/player/custom_player/legacy/ctm_gsg9_varianta.mdl",
-	GSG9b = "models/player/custom_player/legacy/ctm_gsg9_variantb.mdl",
-	GSG9c = "models/player/custom_player/legacy/ctm_gsg9_variantc.mdl",
-	GSG9d = "models/player/custom_player/legacy/ctm_gsg9_variantd.mdl",
-
-	IDFb  = "models/player/custom_player/legacy/ctm_idf_variantb.mdl",
-	IDFc  = "models/player/custom_player/legacy/ctm_idf_variantc.mdl",
-	IDFd  = "models/player/custom_player/legacy/ctm_idf_variantd.mdl",
-	IDFe  = "models/player/custom_player/legacy/ctm_idf_variante.mdl",
-	IDFf  = "models/player/custom_player/legacy/ctm_idf_variantf.mdl",
-
-	SASa  = "models/player/custom_player/legacy/ctm_sas_varianta.mdl",
-	SASb  = "models/player/custom_player/legacy/ctm_sas_variantb.mdl",
-	SASc  = "models/player/custom_player/legacy/ctm_sas_variantc.mdl",
-	SASd  = "models/player/custom_player/legacy/ctm_sas_variantd.mdl",
-	SASe  = "models/player/custom_player/legacy/ctm_sas_variante.mdl",
-	SASf  = "models/player/custom_player/legacy/ctm_sas_variantf.mdl",
-
-	ST6a  = "models/player/custom_player/legacy/ctm_st6_varianta.mdl",
-	ST6b  = "models/player/custom_player/legacy/ctm_st6_variantb.mdl",
-	ST6c  = "models/player/custom_player/legacy/ctm_st6_variantc.mdl",
-	ST6d  = "models/player/custom_player/legacy/ctm_st6_variantd.mdl",
-	ST6e  = "models/player/custom_player/legacy/ctm_st6_variante.mdl",
-	ST6g  = "models/player/custom_player/legacy/ctm_st6_variantg.mdl",
-	ST6i  = "models/player/custom_player/legacy/ctm_st6_varianti.mdl",
-	ST6k  = "models/player/custom_player/legacy/ctm_st6_variantk.mdl",
-	ST6m  = "models/player/custom_player/legacy/ctm_st6_variantm.mdl",
-
-	SWATa = "models/player/custom_player/legacy/ctm_swat_varianta.mdl",
-	SWATb = "models/player/custom_player/legacy/ctm_swat_variantb.mdl",
-	SWATc = "models/player/custom_player/legacy/ctm_swat_variantc.mdl",
-	SWATd = "models/player/custom_player/legacy/ctm_swat_variantd.mdl",
-
-	ANARa = "models/player/custom_player/legacy/tm_anarchist_varianta.mdl",
-	ANARb = "models/player/custom_player/legacy/tm_anarchist_variantb.mdl",
-	ANARc = "models/player/custom_player/legacy/tm_anarchist_variantc.mdl",
-	ANARd = "models/player/custom_player/legacy/tm_anarchist_variantd.mdl",
-
-	BALKa = "models/player/custom_player/legacy/tm_balkan_varianta.mdl",
-	BALKb = "models/player/custom_player/legacy/tm_balkan_variantb.mdl",
-	BALKc = "models/player/custom_player/legacy/tm_balkan_variantc.mdl",
-	BALKd = "models/player/custom_player/legacy/tm_balkan_variantd.mdl",
-	BALKe = "models/player/custom_player/legacy/tm_balkan_variante.mdl",
-	BALKf = "models/player/custom_player/legacy/tm_balkan_variantf.mdl",
-	BALKg = "models/player/custom_player/legacy/tm_balkan_variantg.mdl",
-	BALKh = "models/player/custom_player/legacy/tm_balkan_varianth.mdl",
-	BALKi = "models/player/custom_player/legacy/tm_balkan_varianti.mdl",
-	BALKj = "models/player/custom_player/legacy/tm_balkan_variantj.mdl",
-
-	LEETa = "models/player/custom_player/legacy/tm_leet_varianta.mdl",
-	LEETb = "models/player/custom_player/legacy/tm_leet_variantb.mdl",
-	LEETc = "models/player/custom_player/legacy/tm_leet_variantc.mdl",
-	LEETd = "models/player/custom_player/legacy/tm_leet_variantd.mdl",
-	LEETe = "models/player/custom_player/legacy/tm_leet_variante.mdl",
-	LEETf = "models/player/custom_player/legacy/tm_leet_variantf.mdl",
-	LEETg = "models/player/custom_player/legacy/tm_leet_variantg.mdl",
-	LEETh = "models/player/custom_player/legacy/tm_leet_varianth.mdl",
-	LEETi = "models/player/custom_player/legacy/tm_leet_varianti.mdl",
-
-	PHXa  = "models/player/custom_player/legacy/tm_phoenix_varianta.mdl",
-	PHXb  = "models/player/custom_player/legacy/tm_phoenix_variantb.mdl",
-	PHXc  = "models/player/custom_player/legacy/tm_phoenix_variantc.mdl",
-	PHXd  = "models/player/custom_player/legacy/tm_phoenix_variantd.mdl",
-	PHXf  = "models/player/custom_player/legacy/tm_phoenix_variantf.mdl",
-	PHXg  = "models/player/custom_player/legacy/tm_phoenix_variantg.mdl",
-	PHXh  = "models/player/custom_player/legacy/tm_phoenix_varianth.mdl",
-
-	PRTa  = "models/player/custom_player/legacy/tm_pirate_varianta.mdl",
-	PRTb  = "models/player/custom_player/legacy/tm_pirate_variantb.mdl",
-	PRTc  = "models/player/custom_player/legacy/tm_pirate_variantc.mdl",
-	PRTd  = "models/player/custom_player/legacy/tm_pirate_variantd.mdl",
-
-	PROa  = "models/player/custom_player/legacy/tm_professional_var1.mdl",
-	PROb  = "models/player/custom_player/legacy/tm_professional_var2.mdl",
-	PROc  = "models/player/custom_player/legacy/tm_professional_var3.mdl",
-	PROd  = "models/player/custom_player/legacy/tm_professional_var4.mdl",
-
-	SEPa  = "models/player/custom_player/legacy/tm_separatist_varianta.mdl",
-	SEPb  = "models/player/custom_player/legacy/tm_separatist_variantb.mdl",
-	SEPc  = "models/player/custom_player/legacy/tm_separatist_variantc.mdl",
-	SEPd  = "models/player/custom_player/legacy/tm_separatist_variantd.mdl",
-
-	H_CT  = "models/player/custom_player/legacy/ctm_heavy.mdl",
-	H_T   = "models/player/custom_player/legacy/tm_phoenix_heavy.mdl"
+	T_ANARCHIST = "models/player/t_anarchist/t_anarchist.vmdl",
+	T_BALKAN = "models/player/t_balkan/t_balkan.vmdl",
+	T_ELITE = "models/player/t_elite/t_elite.vmdl",
+	T_PHOENIX = "models/player/t_phoenix/t_phoenix.vmdl",
+	T_PIRATE = "models/player/t_pirate/t_pirate.vmdl",
+	T_PROFESSIONAL = "models/player/t_professional/t_professional.vmdl"
 }
 
 POSE <-
@@ -685,7 +601,7 @@ function PrintMDL( i = 0 )
 	PlaySound(SND_BUTTON);
 
 	local vecOrigin = player.GetOrigin();
-	local out = Fmt( "SpawnMDL( %s,%g, MDL.ST6k )", VecToString( vecOrigin ), player.GetAngles().y );
+	local out = Fmt( "SpawnMDL( %s,%g, MODELS.CT_FBI )", VecToString( vecOrigin ), player.GetAngles().y );
 
 	if (i)
 	{

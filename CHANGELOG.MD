@@ -1,4 +1,4 @@
-CSGO Benchmarks v5.2.0
+<span style="color: blue;">CSGO Autobenchmark Changelog v2.0.0</span>
 
 Added:
 
@@ -16,11 +16,11 @@ Added:
 <span style="color: green;">[+] Added subprocess window hiding</span><br>
 <span style="color: green;">[+] Added file existence checks before operations</span><br>
 <span style="color: green;">[+] Added comprehensive error messages for file operations</span><br>
-<span style="color: green;">[+] Added detailed sections in config.txt with recommendations</span><br>
-<span style="color: green;">[+] Added comprehensive video settings documentation</span><br>
-<span style="color: green;">[+] Added performance recommendations in video.txt</span><br>
-<span style="color: green;">[+] Added clear installation steps in README</span><br>
-<span style="color: green;">[+] Added detailed troubleshooting guide</span><br>
+<span style="color: green;">[+] Added CS2 model support in benchmark scripts</span><br>
+<span style="color: green;">[+] Added CS2 particle effects support</span><br>
+<span style="color: green;">[+] Added CS2 sound effects support</span><br>
+<span style="color: green;">[+] Added new weapon models support for CS2</span><br>
+<span style="color: green;">[+] Added performance settings for CS2</span><br>
 
 Removed:
 
@@ -35,10 +35,13 @@ Removed:
 <span style="color: red;">[-] Removed redundant README sections</span><br>
 <span style="color: red;">[-] Removed complex installation steps</span><br>
 <span style="color: red;">[-] Removed unused license references</span><br>
+<span style="color: red;">[-] Removed legacy CS:GO model paths</span><br>
+<span style="color: red;">[-] Removed deprecated CS:GO commands</span><br>
+<span style="color: red;">[-] Removed unused legacy functions</span><br>
 
 Changed:
 
-<span style="color: yellow;">[?] Changed version from 0.5.1 to 0.5.2</span><br>
+<span style="color: yellow;">[?] Changed version from 0.5.2 to 2.0.0</span><br>
 <span style="color: yellow;">[?] Changed file operations to use context managers</span><br>
 <span style="color: yellow;">[?] Changed CSV processing for better memory efficiency</span><br>
 <span style="color: yellow;">[?] Changed config parsing to be more robust</span><br>
@@ -58,3 +61,8 @@ Changed:
 <span style="color: yellow;">[?] Changed troubleshooting steps to be more precise</span><br>
 <span style="color: yellow;">[?] Changed README structure for better readability</span><br>
 <span style="color: yellow;">[?] Changed requirements.txt to focus on core dependencies</span><br>
+<span style="color: yellow;">[?] Changed benchmark scripts to support CS2</span><br>
+<span style="color: yellow;">[?] Changed model paths to CS2 format</span><br>
+<span style="color: yellow;">[?] Changed command registration to use CS2 Convars</span><br>
+<span style="color: yellow;">[?] Changed effect system to use CS2 particles</span><br>
+<span style="color: yellow;">[?] Changed sound system to use CS2 format</span><br>
